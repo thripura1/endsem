@@ -1,0 +1,130 @@
+/* == Global Reset == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #eaf3ff);
+  color: #222;
+}
+
+/* == App Container == */
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+/* == Header == */
+.header {
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #005bea, #00c6fb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* == Search Bar == */
+.search-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #d0d7ff;
+  font-size: 16px;
+  background: #ffffffaa;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #5b8cff;
+  box-shadow:
+    0 0 0 4px #8bacff55,
+    0 4px 14px rgba(0,0,0,0.12);
+}
+
+.dropdown {
+  padding: 14px 10px;
+  border-radius: 12px;
+  border: 1px solid #ccd4ff;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown:hover {
+  border-color: #7a8fff;
+}
+
+/* == Students List == */
+.student-list {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffffcc;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+/* == List Item == */
+.student-card {
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+  transition: 0.2s ease;
+}
+
+.student-card:hover {
+  background: #eef3ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.student-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.student-roll {
+  color: #444;
+  margin-top: 4px;
+}
+
+.branch-tag {
+  padding: 6px 14px;
+  background: #e3ecff;
+  border-radius: 20px;
+  color: #1b3bb5;
+  font-weight: 600;
+}
+
+/* Highlight */
+mark {
+  background: #fff176;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
